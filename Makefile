@@ -1,6 +1,6 @@
 all:demo example
 demo:
-	g++ RedisPool.cpp  main.cpp ServerLog.cpp -g -o main -std=c++11 -levent -llog4cxx -lpthread -lhiredis \
+	g++ RedisPool.cpp  main.cpp ServerLog.cpp -g -o main -std=c++11 -llog4cxx -lpthread -lhiredis \
 		-I/usr/local/include/hiredis \
 		-Wl,-rpath=/usr/local/lib
 example:

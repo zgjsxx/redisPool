@@ -38,6 +38,9 @@ void* thread_monitor(void* param)
 int main()
 {
     LOG_DEBUG("redis client is starting..");
+    LOG_INFO("redis client is starting..");
+    LOG_WARN("redis client is starting..");
+    LOG_ERROR("redis client is starting..");
     RedisPool* redisClient = RedisPool::GetInstance();
     if(nullptr == redisClient)
     {
